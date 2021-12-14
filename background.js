@@ -13,7 +13,6 @@ chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
 });
 
 chrome.webNavigation.onCompleted.addListener(() => {
-    console.log("webNavigation.onCompleted");
     chrome.tabs.query({ active: true, currentWindow: true }, (tab) => {
         if (!interval) {
             tabId = tab[0].id;
