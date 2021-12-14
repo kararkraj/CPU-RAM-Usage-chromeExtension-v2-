@@ -1,0 +1,34 @@
+{
+    "name": "Getting CPU and RAM usage - v2",
+    "version": "1.0",
+    "description": "Getting CPU and RAM usage - v2",
+    "manifest_version": 2,
+    "permissions": [
+        "declarativeContent",
+        "webNavigation",
+        "system.cpu",
+        "system.memory",
+        "http://localhost:4200/"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "",
+        "default_icon": {
+            "16": "/images/get_started16.png",
+            "32": "/images/get_started32.png",
+            "48": "/images/get_started48.png",
+            "128": "/images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/get_started16.png",
+        "32": "/images/get_started32.png",
+        "48": "/images/get_started48.png",
+        "128": "/images/get_started128.png"
+    }
+}
